@@ -1,4 +1,4 @@
-FROM mdavid/centos-dotnet:7-1.0.1-core
+FROM mdavid/centos-dotnet-core:latest
 
 #Install official CentOS node distro
 RUN yum install -y epel-release \

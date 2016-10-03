@@ -1,4 +1,4 @@
-FROM mdavid/centos:7
+FROM elastistack/centos:7
 
 #Install official CentOS node distro
 RUN yum install -y epel-release \
@@ -14,4 +14,3 @@ RUN curl -sSL $NODE_DOWNLOAD_URL -o $NODE_VERSION_LINUX.tar.gz \
     && tar -zxf $NODE_VERSION_LINUX.tar.gz -C /opt/node \
     && rm $NODE_VERSION_LINUX.tar.gz \
     && ln -s /opt/node/$NODE_VERSION_LINUX/bin/* /usr/local/bin
-
