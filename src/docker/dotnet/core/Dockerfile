@@ -1,4 +1,4 @@
-FROM mdavid/centos-dotnet:7-1.0.1-core-deps
+FROM elastistack/centos-dotnet-core-deps:latest
 
 # Install .NET Core
 ENV DOTNET_VERSION 1.0.0

@@ -1,4 +1,4 @@
-FROM mdavid/centos:7
+FROM elastistack/centos:7
 
 # Install .NET Core dependencies
 RUN yum update -y \
@@ -10,7 +10,3 @@ RUN rpm --import "http://keyserver.ubuntu.com/pks/lookup?op=get&search=0x3FA7E03
 RUN yum-config-manager --add-repo http://download.mono-project.com/repo/centos/
 RUN yum update -y
 RUN yum -y install mono-complete
-
-
-	    
-
