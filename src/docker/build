@@ -6,16 +6,16 @@ docker push elastistack/centos:7
 docker build -t elastistack/centos-dotnet:latest dotnet/
 docker push elastistack/centos-dotnet:latest
 
-docker build -t elastistack/centos-dotnet-core-deps:latest core-deps/
+docker build -t elastistack/centos-dotnet-core-deps:latest dotnet/core-deps/
 docker push elastistack/centos-dotnet-core-deps:latest
 
-docker build -t elastistack/centos-dotnet-core:latest core/
+docker build -t elastistack/centos-dotnet-core:latest dotnet/core/
 docker push elastistack/centos-dotnet-core:latest
 
-docker build -t elastistack/centos-dotnet-node:latest node/
+docker build -t elastistack/centos-dotnet-node:latest dotnet/node/
 docker push elastistack/centos-dotnet-node:latest
 
-docker build -t elastistack/centos-dotnet-aws:latest aws/
+docker build -t elastistack/centos-dotnet-aws:latest dotnet/aws/
 docker push elastistack/centos-dotnet-aws:latest
 
 docker build -t elastistack/continuous:latest continuous/
