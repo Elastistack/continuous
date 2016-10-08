@@ -1,5 +1,6 @@
-FROM elastistack/centos:7
+FROM elastistack/centos:7.1.1503
 
+RUN yum clean -y all && yum swap -y fakesystemd systemd
 # Install .NET Core dependencies
 RUN yum update -y \
     && yum install -y \

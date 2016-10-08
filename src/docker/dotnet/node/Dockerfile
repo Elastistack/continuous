@@ -1,4 +1,4 @@
-FROM elastistack/centos-dotnet-core:latest
+FROM elastistack/centos-dotnet-core:7.1.1503-1.0.1
 
 #Install official CentOS node distro
 RUN yum install -y epel-release \

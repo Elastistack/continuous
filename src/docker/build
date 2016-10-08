@@ -1,22 +1,22 @@
 #!/bin/bash -e
 
-docker build -t elastistack/centos:7 .
-docker push elastistack/centos:7
+docker build --no-cache -t elastistack/centos:7.1.1503 .
+docker push elastistack/centos:7.1.1503
 
-docker build -t elastistack/centos-dotnet:latest dotnet/
-docker push elastistack/centos-dotnet:latest
+docker build --no-cache -t elastistack/centos-dotnet:7.1.1503-1.0.1 dotnet/
+docker push elastistack/centos-dotnet:7.1.1503-1.0.1
 
-docker build -t elastistack/centos-dotnet-core-deps:latest dotnet/core-deps/
-docker push elastistack/centos-dotnet-core-deps:latest
+docker build --no-cache -t elastistack/centos-dotnet-core-deps:7.1.1503-1.0.1 dotnet/core-deps/
+docker push elastistack/centos-dotnet-core-deps:7.1.1503-1.0.1
 
-docker build -t elastistack/centos-dotnet-core:latest dotnet/core/
-docker push elastistack/centos-dotnet-core:latest
+docker build --no-cache -t elastistack/centos-dotnet-core:7.1.1503-1.0.1 dotnet/core/
+docker push elastistack/centos-dotnet-core:7.1.1503-1.0.1
 
-docker build -t elastistack/centos-dotnet-node:latest dotnet/node/
-docker push elastistack/centos-dotnet-node:latest
+docker build --no-cache -t elastistack/centos-dotnet-node:7.1.1503-1.0.1-4.3.2 dotnet/node/
+docker push elastistack/centos-dotnet-node:7.1.1503-1.0.1-4.3.2
 
-docker build -t elastistack/centos-dotnet-aws:latest dotnet/aws/
-docker push elastistack/centos-dotnet-aws:latest
+docker build --no-cache -t elastistack/centos-dotnet-aws:7.1.1503-1.0.1-4.3.2-1.11.1 dotnet/aws/
+docker push elastistack/centos-dotnet-aws:7.1.1503-1.0.1-4.3.2-1.11.1
 
-docker build -t elastistack/continuous:latest continuous/
-docker push elastistack/continuous:latest
+docker build --no-cache -t elastistack/continuous:0.1.3 continuous/
+docker push elastistack/continuous:0.1.3
